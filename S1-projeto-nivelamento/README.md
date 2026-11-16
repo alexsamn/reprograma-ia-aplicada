@@ -2,7 +2,6 @@
 
 **Aluna:** Alexsandra Moura
 **Tipo:** individual
-**Arquivo da entrega:** [`S1-inventario-de-problemas.pdf`](./S1-inventario-de-problemas.pdf)
 
 ## Objetivo da atividade
 
@@ -12,14 +11,13 @@ Identificar tarefas do dia a dia que consomem tempo ou geram desgaste, filtrar q
 
 ### 1. Inventário de problemas
 
-Levantei 4 problemas recorrentes da minha rotina:
+Problemas recorrentes da minha rotina:
 
 | # | Problema | Contexto |
 |---|----------|----------|
 | 1 | Case de portfólio de UI/UX travado na etapa de pesquisa | Muito conteúdo, sem clareza do que priorizar nem de como usar o tempo |
 | 2 | Onde estacionar a bike com segurança em São Paulo | Google Maps não tem a informação; as dicas ficam perdidas no grupo de WhatsApp de ciclistas |
 | 3 | Encontrar oficinas de bike confiáveis por perto | Poucas avaliações no Google Maps; a recomendação circula só no boca a boca do grupo |
-| 4 | Organizar a busca de emprego e freela | Falta um cronograma que junte busca de vagas, prática de entrevista e currículo adaptado a ATS |
 
 ### 2. Filtro de viabilidade
 
