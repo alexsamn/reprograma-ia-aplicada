@@ -2,7 +2,7 @@
 
 **Aluna:** Alexsandra Moura
 **Tipo:** individual
-**Arquivo da entrega:** [`S3-automacao-make.pdf`](./S3-automacao-make.pdf)
+
 
 ## Links
 
@@ -15,8 +15,6 @@ Criar uma automação sem código que usa IA para executar uma tarefa repetitiva
 ## Entregável
 
 Cenário no **Make** que integra Gmail, Google Gemini AI e Google Sheets:
-
-![Fluxo da automação no Make](./fluxo-make.png)
 
 | Etapa | Ferramenta | Módulo | O que faz |
 |------:|------------|--------|-----------|
