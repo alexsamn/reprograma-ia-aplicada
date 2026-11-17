@@ -10,7 +10,7 @@ FICHA ────────────────────────�
 Aluna ....... Alexsandra Moura
 Curso ....... Todas em Tech Futuro+: IA Aplicada
 Instituição . Reprograma
-Projetos .... 11 entregas (7 individuais, 4 em grupo)
+Projetos .... 13 entregas (9 individuais, 4 em grupo)
 Status ...... Em andamento
 ```
 
@@ -29,21 +29,24 @@ Status ...... Em andamento
 | [S9](./S9-detetive-de-vies/) | **Detetive de Viés** · O bairro decide o crédito? | Auditoria de IA de crédito: teste 10 × 10, plano de risco e veredito "não lança" | Grupo |
 | [S10](./S10-modelagem-de-negocio-precificacao/) | **Modelagem de Negócio + Precificação** · LALAser | Problema medido em reais, piso de preço, hipótese de A para B, teste de 30 dias e pitch de 90 segundos | Individual |
 | [S11](./S11-consultoria-de-ia-prisma/) | **Consultoria de IA** · Prisma IA para a VivaBem | Assistente de IA para o atendente (RAG + MCP + guardrails), benchmarking de 4 caminhos e piloto de 90 dias | Grupo |
+| [S12](./S12-vibe-coding-arquivos-de-ux/) | **Vibe Coding** · Arquivos de UX | Glossário de Product Design publicado, com banco no Supabase, área admin com login e RLS, e deploy na Vercel | Individual |
+| [S13](./S13-agente-simulacao-entrevistas/) | **Agente de IA** · Simulação de entrevistas | Agente com regra de "confirmo", fontes de verdade, proteção contra injeção e 3 testes documentados | Individual |
 
 ## Competências trabalhadas
 
 - **Prompting:** papel, contexto, tarefa, formato e restrições; iteração; prompts que separam fato, inferência e lacuna
 - **Automação com IA:** fluxos sem código (Make, Gmail, Google Sheets) com LLM numa etapa específica
-- **Agentes:** instruções fixas, critérios de conclusão, gatilhos e decisão final humana
+- **Agentes:** instruções fixas, critérios de conclusão, gatilhos, fontes de verdade, confirmação explícita antes de agir e testes de comportamento
 - **Dados:** diagnóstico e limpeza, denominador, tamanho de amostra, distribuição, correlação × causalidade
 - **Visualização:** gráfico escolhido pela pergunta, título com conclusão, eixo no zero e n de cada grupo
 - **IA responsável:** auditoria de viés, LGPD, plano de risco e revisão humana
 - **Negócio:** tamanho do problema em reais, precificação, hipótese de A para B, teste com critério de seguir, ajustar ou parar
 - **Consultoria:** priorização de caso de uso, benchmarking, business case, plano de 90 dias e pitch executivo
+- **Vibe coding:** plano faseado, desenvolvimento com IA, banco de dados, autenticação, Row Level Security e deploy
 
 ## Ferramentas
 
-Claude · ChatGPT · Gemini · Make · Google Sheets · Excel · Chart.js · Google Slides
+Claude · Claude Code · ChatGPT · Gemini · Make · Google Sheets · Excel · Chart.js · Google Slides · Next.js · Supabase · Vercel
 
 ---
 
