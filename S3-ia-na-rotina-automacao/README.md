@@ -2,7 +2,6 @@
 
 **Aluna:** Alexsandra Moura
 **Tipo:** individual
-**Arquivo da entrega:** [`S3-automacao-make.pdf`](./S3-automacao-make.pdf)
 
 ## Links
 
