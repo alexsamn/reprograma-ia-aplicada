@@ -1,44 +1,45 @@
-# S7 · Matriz de Esforço × Impacto — Priorizando onde usar IA
+## Matriz de Esforço × Impacto — Priorizando onde usar IA
 
-**Aluna:** Alexsandra Moura
-**Tipo:** individual
+Uma matriz para decidir qual tarefa da rotina vale uma solução com IA, e a validação da tecnologia antes de construir, que trocou um agente autônomo por uma automação simples e mais segura.
 
-## Objetivo da atividade
+```
+FICHA DO PROJETO ──────────────────────
 
-Mapear tarefas da rotina, priorizar quais valem uma solução com IA usando uma matriz de esforço × impacto e validar a tecnologia escolhida antes de construir.
+Semana ...... 07
+Módulo ...... Matriz de Esforço × Impacto
+Tipo ........ Individual
+Meu papel ... Inventário, pontuação, priorização e validação da tecnologia
+Ferramentas . Planilha · IA generativa
+Status ...... Concluído
+```
 
-## 1. Inventário de tarefas
+### 1. Problema
+Muitas tarefas da rotina parecem boas candidatas a IA. Sem critério, a tendência é começar pela mais interessante, e não pela que mais rende.
 
-Cada tarefa recebeu uma nota de 1 a 5 em volume, risco de erro e complexidade, e uma hipótese de tecnologia:
+### 2. Objetivo
+Pontuar as tarefas, escolher a prioridade e confirmar se a tecnologia pensada é a certa antes de investir tempo.
 
-| # | Tarefa | Tipo | Volume | Erro | Complexidade | Tecnologia (hipótese) | **Impacto** | **Esforço** |
-|--:|--------|------|:------:|:----:|:------------:|-----------------------|:-----------:|:-----------:|
-| 1 | Buscar e filtrar vagas de Moda e UI/UX | Braçal | 5 | 1 | 2 | Agente | **5** | **2,5** |
-| 2 | Adaptar CV e carta para cada vaga (ATS, escopo, título) | Mental | 4 | 4 | 2 | RAG | **4** | **4** |
-| 3 | Treinar respostas para entrevista | Mental | 2 | 2 | 1 | LLM | **2** | **2** |
-| 4 | Atualizar planilha de candidaturas | Braçal | 3 | 3 | 1 | LLM | **3** | **2,5** |
-| 5 | Buscar freelas (Upwork, 99Freelas, Workana) | Braçal | 3 | 2 | 2 | Agente | **3** | **3** |
-| 6 | Reuniões de planejamento (Discovery e Refinamento) | Mental | 1 | 1 | 1 | RAG | **1** | **1,5** |
-| 7 | Buscar recrutadores e pessoas para networking | Braçal | 1 | 1 | 1 | LLM | **1** | **1,5** |
-| 8 | Acompanhar inscrições de hackathons | Braçal | 1 | 1 | 1 | LLM | **1** | **1,5** |
+> Se eu automatizar a tarefa de maior impacto e menor esforço, então o ganho aparece rápido, com pouco risco.
 
-**Fórmulas da planilha:**
-- **Impacto** = volume
-- **Esforço** = complexidade + (erro ÷ 2), com teto de 5
+### 3. Processo
+1. **Inventário:** listei 8 tarefas e dei notas de 1 a 5 para volume, risco de erro e complexidade, com uma hipótese de tecnologia para cada.
+2. **Pontuação:** **Impacto** = volume. **Esforço** = complexidade + (erro ÷ 2), com teto de 5.
+3. **Matriz:** posicionei as tarefas nos quadrantes.
+4. **Validação:** pedi a uma IA, no papel de especialista em soluções com IA, casos de mercado, perguntas críticas e uma avaliação da tecnologia escolhida.
 
-## 2. Matriz
+| # | Tarefa | Tipo | Tecnologia (hipótese) | Impacto | Esforço |
+|--:|--------|------|-----------------------|:-------:|:-------:|
+| 1 | Buscar e filtrar vagas de Moda e UI/UX | Braçal | Agente | **5** | **2,5** |
+| 2 | Adaptar CV e carta para cada vaga | Mental | RAG | 4 | 4 |
+| 3 | Treinar respostas para entrevista | Mental | LLM | 2 | 2 |
+| 4 | Atualizar planilha de candidaturas | Braçal | LLM | 3 | 2,5 |
+| 5 | Buscar freelas (Upwork, 99Freelas, Workana) | Braçal | Agente | 3 | 3 |
+| 6 | Reuniões de planejamento (Discovery e Refinamento) | Mental | RAG | 1 | 1,5 |
+| 7 | Buscar recrutadores e networking | Braçal | LLM | 1 | 1,5 |
+| 8 | Acompanhar inscrições de hackathons | Braçal | LLM | 1 | 1,5 |
 
-![Matriz de esforço × impacto](./matriz-esforco-impacto.png)
-
-*Gráfico refeito a partir dos valores da planilha original.*
-
-**Prioridade: tarefa 1, buscar e filtrar vagas.** É a de maior impacto (5) com esforço baixo (2,5), no quadrante de ganho rápido.
-
-A tarefa 4, atualizar a planilha de candidaturas, já foi automatizada na [S3](../S3-ia-na-rotina-automacao/), com Gmail + Gemini + Google Sheets.
-
-## 3. Validação da tecnologia com IA
-
-Antes de construir, pedi a uma IA, no papel de especialista em soluções com IA, que avaliasse a escolha:
+<details>
+<summary>Ver o prompt de validação</summary>
 
 ```text
 Você é um especialista em soluções com Inteligência Artificial.
@@ -56,47 +57,48 @@ Com base nessas informações:
   de baixo risco e alto impacto.
 ```
 
-### O que voltou
+</details>
 
-**Casos de mercado:**
-- **LinkedIn:** busca de vagas em linguagem natural e "Job Match", que explica por que uma vaga foi recomendada
-- **Jobright Agent:** pontua vagas contra o perfil e se candidata sozinho (só vagas dos EUA)
-- **Indeed Career Scout:** aprende preferências e acompanha candidaturas (só no app)
-
-O ponto em comum: os três têm acesso próprio e legal a uma base enorme de vagas, e a IA é só a camada de cima. Esse é justamente o ponto fraco de um projeto individual.
-
-**Perguntas críticas:**
-1. De onde vêm as vagas, e há acesso legal e estável a elas? Fazer scraping viola termos de uso, e sites com login quebram agentes.
-2. O critério de filtro está escrito de forma explícita? Sem uma rubrica, a IA filtra por achismo.
-3. Quanto tempo a solução custa para ser feita, contra quanto tempo economiza?
-
-**Veredito: um agente autônomo não é a melhor escolha para começar.**
+### 4. Decisões
+| Decisão | Por quê |
+|---|---|
+| Priorizar a tarefa 1 (buscar e filtrar vagas) | Maior impacto (5) com esforço baixo (2,5): ganho rápido |
+| **Trocar o agente autônomo por automação + 1 chamada de LLM** | Os casos de mercado (LinkedIn, Jobright, Indeed) funcionam porque têm acesso próprio a bases enormes de vagas. Um agente individual navegando sites quebra com login e captcha, e scraping pode violar termos de uso |
+| Usar os alertas de vaga que já chegam por e-mail como fonte | Não tem risco legal (é só ler o próprio e-mail) e o fluxo é previsível |
+| Gravar todas as vagas, não só as aprovadas | Permite enxergar os falsos negativos |
+| Validar a IA por 2 semanas numa coluna "minha avaliação" | Se ela errar mais de 20%, o ajuste é na rubrica, não na tecnologia |
+| Sem candidatura automática | Cada candidatura precisa de contexto próprio |
 
 | Critério | Agente autônomo | Automação + 1 chamada de LLM |
 |----------|-----------------|------------------------------|
 | Fonte de dados | Navega em sites; quebra com login, captcha ou mudança de layout | Alertas de vaga que os sites já mandam por e-mail |
-| Risco legal | Scraping pode violar termos de uso | Nenhum: só lê o próprio e-mail |
-| Previsibilidade | Baixa | Alta: o fluxo é fixo e só a classificação usa IA |
+| Risco legal | Scraping pode violar termos de uso | Nenhum |
+| Previsibilidade | Baixa | Alta: só a classificação usa IA |
 | Custo | Muitas chamadas por execução | 1 chamada por vaga |
 | Tempo para funcionar | Semanas | Um fim de semana |
 
-## 4. Decisão: trocar a tecnologia
+### 5. Resultado
+![Matriz de esforço × impacto](./matriz-esforco-impacto.png)
 
-Troquei a hipótese de **Agente** pela arquitetura de **automação + LLM**:
+*Gráfico refeito a partir dos valores da planilha original.*
 
+**Arquitetura escolhida:**
 1. **Entrada:** alertas de vaga (LinkedIn, Gupy, Indeed, Vagas.com, Catho) chegando no Gmail
 2. **Automação:** Google Apps Script lê os alertas uma vez por dia
 3. **IA, uma única tarefa:** o LLM recebe a vaga e uma rubrica escrita e devolve um JSON com trilha, se a senioridade serve, nota e motivo
-4. **Saída:** planilha com todas as vagas e filtro para as de nota ≥ 7
+4. **Saída:** planilha com todas as vagas e filtro para nota ≥ 7
 
-**Decisões de projeto:**
-- **Gravar todas as vagas, não só as aprovadas**, para enxergar os falsos negativos
-- **Coluna "Sua avaliação"** para validar a IA nas 2 primeiras semanas. Se ela errar mais de 20%, o ajuste é na rubrica, não na tecnologia
-- **Sem candidatura automática:** cada candidatura precisa de contexto próprio
-- **Agente só depois**, para tarefas de vários passos sobre vagas já filtradas (ex.: pesquisar a empresa e sugerir qual case do portfólio destacar)
+A tarefa 4 (atualizar a planilha de candidaturas) já tinha sido automatizada na [S3](../S3-ia-na-rotina-automacao/).
 
-## O que aprendi
+### 6. Aprendizados
+- **O que funcionou:** questionar a própria hipótese antes de construir. O "agente" virou uma automação simples, com IA numa etapa só.
+- **O que eu faria diferente:** escrever a rubrica de filtro antes de escolher a tecnologia.
+- **O que levo para os próximos projetos:** a tecnologia raramente é o gargalo; o critério é. Um agente só faz sentido depois que o fluxo simples estiver estável.
 
-- **A matriz evita começar pela tarefa mais divertida** em vez da que mais rende.
-- **Questionar a própria hipótese mudou a solução:** o "agente" virou uma automação simples com IA numa única etapa, com menos risco e mais previsibilidade.
-- **A tecnologia não é o gargalo, o critério é.** Antes de construir, a rubrica de filtro precisa estar escrita e testada com vagas reais.
+### 7. Próximos passos
+- [ ] Testar a rubrica com 20 vagas reais e medir o acerto (meta: 80% ou mais)
+- [ ] Implementar o Apps Script e rodar por 2 semanas com validação manual
+
+---
+
+← [Voltar para todos os projetos](../README.md) · [Portfólio](https://www.alexsandramoura.com.br) · [LinkedIn](https://www.linkedin.com/in/alexsandramoura)
