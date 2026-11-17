@@ -1,4 +1,4 @@
-## IA na Rotina — Automação Inteligente
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/8c68cec8-aa2a-4133-b651-2922f040def9" />
 
 Uma automação sem código que lê os e-mails de candidatura a vagas e monta sozinha uma planilha de acompanhamento, usando IA para extrair empresa, cargo e data.
 
