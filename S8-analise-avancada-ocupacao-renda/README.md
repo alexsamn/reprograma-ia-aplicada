@@ -1,4 +1,4 @@
-## Nossa Análise Avançada — Ocupação × Renda
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/2c0059e8-2636-4230-a817-216da14345c0" />
 
 Uma análise em grupo de um dataset de pedidos de delivery: limpeza, cruzamento de ocupação com renda e recomendação estratégica para operação e marketing.
 
