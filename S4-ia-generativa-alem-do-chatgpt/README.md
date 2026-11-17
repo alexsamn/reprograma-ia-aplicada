@@ -1,4 +1,4 @@
-## IA Generativa Aplicada — Agente de Transição de Carreira
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/119ed1ee-4d0c-4173-a757-a3c1066aa464" />
 
 Um agente de IA com regras próprias para quem está migrando de área: ele organiza estudo, portfólio e preparação para o mercado, e cobra entrega real em vez de conteúdo consumido.
 
