@@ -1,4 +1,4 @@
-## Dados como Insumo para Decisão
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/6ac1e2eb-a0e1-47b0-96a8-fb58cfcc0401" />
 
 Duas análises com o mesmo princípio: separar o que o número mostra do que alguém está concluindo, e só então decidir. A primeira avalia se uma campanha de vacinação fracassou; a segunda, qual o melhor dia da semana para marcar uma consulta.
 
