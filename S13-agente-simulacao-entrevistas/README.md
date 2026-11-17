@@ -1,4 +1,4 @@
-## Agente de IA — Simulação de entrevistas
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/65c5cd63-986d-4f8b-a606-e398c476eb52" />
 
 Um agente que simula entrevistas para vagas júnior de Product Design e UX/UI, avalia as respostas pelo método STAR e só age fora da conversa com uma confirmação explícita, sem nunca inventar experiência.
 
