@@ -1,6 +1,4 @@
-# reprograma-ia-aplicada
-
-![Todas em Tech · IA Aplicada](./capa.png)
+<img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/42137072-04da-4ed9-992b-e34a5f841f6f" />
 
 Projetos que desenvolvi no curso **Todas em Tech Futuro+: IA Aplicada** (Reprograma, 2026), uma formação prática de 16 semanas em inteligência artificial para mulheres.
 
