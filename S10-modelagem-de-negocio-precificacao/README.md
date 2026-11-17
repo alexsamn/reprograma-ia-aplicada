@@ -1,4 +1,4 @@
-## Modelagem de Negócio e Precificação — LALAser
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/d9cbec2e-4015-4dc3-886f-1a7886f35e97" />
 
 Um canvas de 9 caixas e um pitch de 90 segundos para um estúdio de remoção de tatuagem a laser que perde clientes no atendimento pelo Instagram: do problema medido em reais a um teste de 30 dias com custo zero.
 
