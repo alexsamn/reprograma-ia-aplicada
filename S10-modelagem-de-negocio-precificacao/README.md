@@ -14,7 +14,7 @@ Status ...... Concluído
 ```
 
 ### 1. Problema
-A LALAser perde pelo menos **5 potenciais clientes por mês** no atendimento inicial pelo Instagram. Os orçamentos são enviados à mão, sem padrão, e quando a conversa esfria ninguém retoma o contato. Quem sente é a proprietária, que cuida sozinha do atendimento e dos procedimentos, perde tempo com conversas picadas ao longo do dia e deixa de faturar.
+A LAlalaser perde pelo menos **5 potenciais clientes por mês** no atendimento inicial pelo Instagram. Os orçamentos são enviados à mão, sem padrão, e quando a conversa esfria ninguém retoma o contato. Quem sente é a proprietária, que cuida sozinha do atendimento e dos procedimentos, perde tempo com conversas picadas ao longo do dia e deixa de faturar.
 
 **Evidência:** pelo menos 5 conversas de orçamento interrompidas por mês nas DMs, e 5 horas mensais gastas nessas conversas.
 
