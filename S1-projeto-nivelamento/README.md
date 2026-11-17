@@ -1,4 +1,3 @@
-## O Inventário de Problemas
 
 <img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/4afaa31a-e2a3-4d89-832a-19ec2ee215e8" />
 
