@@ -1,18 +1,32 @@
-# S8 · Nossa Análise Avançada — Ocupação × Renda
+## Nossa Análise Avançada — Ocupação × Renda
 
-**Equipe:** Alexsandra Moura, Karol de Castro e Rilza Boaventura
-**Tipo:** em grupo
-**Tema do grupo (1):** o efeito da ocupação sobre o comportamento de pedido muda conforme a faixa de renda? É o direcionamento mais avançado da turma, porque cruza duas variáveis.
+Uma análise em grupo de um dataset de pedidos de delivery: limpeza, cruzamento de ocupação com renda e recomendação estratégica para operação e marketing.
 
-## Objetivo da atividade
+```
+FICHA DO PROJETO ──────────────────────
 
-Partir de um dataset compartilhado pela turma (pedidos de delivery online) e entregar uma análise completa: dado preparado, padrão encontrado, visualização e recomendação estratégica para duas personas, apresentada em 5 minutos.
+Semana ...... 08
+Módulo ...... Dados Avançado: De Bruto a Insight
+Tipo ........ Em grupo (Alexsandra Moura, Karol de Castro e Rilza Boaventura)
+Meu papel ... Integrante da equipe: diagnóstico, limpeza, análise e recomendação
+Ferramentas . IA generativa · Excel / planilhas
+Status ...... Concluído
+```
 
-## A base
+### 1. Problema
+Uma plataforma de delivery quer saber onde concentrar campanhas e operação. A pergunta do nosso grupo (tema 1, o mais avançado da turma): **o efeito da ocupação sobre o comportamento de pedido muda conforme a faixa de renda?** Para responder, é preciso cruzar duas variáveis, não só uma.
 
-Dataset de pedidos de delivery online com 388 linhas e 13 colunas: idade, gênero, estado civil, ocupação, renda mensal, escolaridade, tamanho da família, tipo de cliente, latitude, longitude, CEP, `Output` (Yes/No) e feedback. A renda está em rúpias (Rs), e os CEPs são de Bangalore, na Índia.
+### 2. Objetivo
+Entregar uma análise completa: dado preparado, padrão encontrado, visualização e recomendação estratégica para duas personas, apresentada em 5 minutos.
 
-## 1. Diagnóstico e limpeza
+> Se entendermos como ocupação e renda se combinam, então as campanhas podem mirar o segmento certo, em vez de tratar todo cliente igual.
+
+### 3. Processo
+1. **Base:** dataset compartilhado da turma, com 388 linhas e 13 colunas (idade, gênero, estado civil, ocupação, renda, escolaridade, tamanho da família, tipo de cliente, localização, `Output` Yes/No e feedback). A renda está em rúpias, e os CEPs são de Bangalore, na Índia.
+2. **Diagnóstico de qualidade** com IA.
+3. **Limpeza** com prompts.
+4. **Padrões:** taxa de `Output = Yes` por ocupação e faixa de renda.
+5. **Visualização e recomendação** para as personas de operação (A) e de mercado (B).
 
 | Problema | O que encontramos | Como resolvemos |
 |----------|-------------------|-----------------|
@@ -20,13 +34,18 @@ Dataset de pedidos de delivery online com 388 linhas e 13 colunas: idade, gêner
 | **Coluna fantasma** | Uma coluna idêntica a `Output`, criada por uma vírgula sobrando no fim do cabeçalho | Coluna removida |
 | **Formato inconsistente** | `Monthly Income`, `Family size`, `latitude` e `Pin code`. A latitude virou data no Excel (ex.: `9766-12-01` no lugar de `12.9766`) | Padronização |
 | **Erro de digitação** | `Self Employeed` | Correção |
-| **Formatos misturados** | `Ph.D`; faixas de renda escritas de jeitos diferentes (`Below Rs.10000` com moeda, `10001 to 25000` sem moeda) | Padronização |
+| **Formatos misturados** | `Ph.D`; faixas de renda com e sem moeda (`Below Rs.10000` × `10001 to 25000`) | Padronização |
 | **Tipo errado** | CEP salvo como número inteiro | Conversão para texto |
 
-## 2. Padrões encontrados
+### 4. Decisões
+| Decisão | Por quê |
+|---|---|
+| Remover as duplicatas antes de qualquer conta | 103 linhas são 27% da base e distorceriam todas as taxas |
+| Mostrar o tamanho de cada grupo (n) no gráfico | Uma taxa de 100% com 1 pessoa não vale o mesmo que 86% com 122 |
+| Tratar grupos com menos de 10 pessoas como leitura frágil | Cruzar duas variáveis multiplica os grupos e encolhe cada um |
+| Recomendar a ação para empregados de renda baixa **como teste** | A faixa tem só 6 pessoas; não sustenta uma conclusão sozinha |
 
-Taxa de clientes com `Output = Yes` em cada combinação de ocupação e renda:
-
+### 5. Resultado
 ![Taxa de Output = Yes por ocupação e faixa de renda](./grafico-ocupacao-renda.png)
 
 *Gráfico refeito a partir do dataset sem duplicatas, com o tamanho de cada grupo (n) indicado.*
@@ -34,33 +53,31 @@ Taxa de clientes com `Output = Yes` em cada combinação de ocupação e renda:
 | Ocupação | Padrão | Solidez |
 |----------|--------|---------|
 | **Estudantes** | Taxa alta em qualquer faixa: 86% sem renda (105 de 122) e 80% a 100% nas faixas com renda | ✅ Sólido para "sem renda" (n=122). As faixas com renda têm de 1 a 13 pessoas |
-| **Empregados** | A taxa sobe de 33% (abaixo de Rs 10.000) para 76% (Rs 10.001–25.000) e se estabiliza entre 62% e 63% nas faixas mais altas | ⚠️ As faixas com n de 21 a 38 sustentam o patamar de 62% a 76%. O "salto" a partir de 33% vem de **só 6 pessoas** (2 de 6) |
-| **Autônomos** | Estável entre 55% e 70% acima de Rs 10.000, sem variações extremas | ✅ Moderado (n de 10 a 17) |
+| **Empregados** | Sobe de 33% (abaixo de Rs 10.000) para 76% (Rs 10.001–25.000) e fica entre 62% e 63% nas faixas mais altas | ⚠️ O patamar de 62% a 76% é sólido (n de 21 a 38). O "salto" a partir de 33% vem de **só 6 pessoas** |
+| **Autônomos** | Estável entre 55% e 70% acima de Rs 10.000 | ✅ Moderado (n de 10 a 17) |
 | **Donas de casa** | 78% (7 de 9), todas sem renda própria | ⚠️ Grupo pequeno |
 
-**Leitura:** a ocupação pesa mais que a renda. Estudantes pedem muito mesmo sem renda própria. Para empregados, a renda baixa aparece associada a menos pedidos, mas a amostra dessa faixa é pequena demais para afirmar um limiar.
+**Leitura:** a ocupação pesa mais que a renda. Estudantes pedem muito mesmo sem renda própria.
 
-## 3. Recomendação estratégica
-
-**Regra de negócio para campanhas:**
+**Recomendação estratégica:**
 - **Estudantes:** apostar em frequência, não em poder de compra. Combos de baixo custo, entrega rápida, indicação (member-get-member) e programa de pontos.
 - **Empregados com renda de Rs 10.001–25.000:** a faixa de maior resposta. Ofertas de conveniência para a rotina.
-- **Empregados abaixo de Rs 10.000:** cupom de primeira compra e isenção de taxa de entrega, **como teste**, para confirmar se a baixa adesão se repete numa amostra maior.
+- **Empregados abaixo de Rs 10.000:** cupom de primeira compra e isenção de taxa de entrega, como teste.
 
 | Persona | O que o achado significa |
 |---------|--------------------------|
-| **A · Operação e logística** | Estudantes geram volume constante, independentemente da renda declarada. Vale cruzar ocupação com região para dimensionar a frota onde eles se concentram |
+| **A · Operação e logística** | Estudantes geram volume constante, independentemente da renda. Vale cruzar ocupação com região para dimensionar a frota onde eles se concentram |
 | **B · Mercado e produto** | Segmentar por ocupação antes de segmentar por renda: combos e fidelidade para estudantes, ofertas de entrada para empregados de renda baixa |
 
-## Limitações
+### 6. Aprendizados
+- **O que funcionou:** limpar antes de analisar. 80% do trabalho foi arrumar a base.
+- **O que eu faria diferente:** conferir o gráfico gerado com IA contra os números da tabela antes de apresentar, e documentar o que `Output` mede antes de interpretar a coluna.
+- **O que levo para os próximos projetos:** todo gráfico precisa mostrar o n. Explicações como "mesada" ou "rotina digital" são hipóteses, porque a base não tem esses dados.
 
-- **Grupos pequenos:** várias combinações têm menos de 10 pessoas (hachuradas no gráfico) e não sustentam conclusão sozinhas.
-- **O que `Output` mede:** o grupo leu `Output = Yes` como "faz pedido online". O dataset não documenta a coluna com precisão.
-- **Correlação, não causa:** o dataset não tem dados de mesada, rotina ou motivação. Explicações como "suporte familiar" são hipóteses para testar.
-- **Sem horário nem volume de pedidos:** recomendações sobre horários de pico pedem dados que esta base não tem.
+### 7. Próximos passos
+- [ ] Repetir a análise com uma amostra maior de empregados de renda baixa
+- [ ] Cruzar ocupação com região para a recomendação de frota
 
-## O que aprendi
+---
 
-- **80% do trabalho é limpar:** 103 duplicatas, ou 27% da base, distorceriam todas as taxas.
-- **Um gráfico precisa mostrar o n.** Uma taxa de 100% com 1 pessoa não vale o mesmo que 86% com 122.
-- **Cruzar duas variáveis multiplica os grupos e encolhe cada um.** É aí que a amostra pequena aparece.
+← [Voltar para todos os projetos](../README.md) · [Portfólio](https://www.alexsandramoura.com.br) · [LinkedIn](https://www.linkedin.com/in/alexsandramoura)
