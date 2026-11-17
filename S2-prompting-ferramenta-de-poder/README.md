@@ -2,12 +2,9 @@
 
 **Equipe:** Leticia, Bea, Larissa Roberta, Larissa e Alexsandra Moura
 **Tipo:** em grupo
-**Arquivo da entrega:** [`S2-tema4-todos-devem-ter-casa.pdf`](./S2-tema4-todos-devem-ter-casa.pdf)
 
 ## Links
 
-- 💬 [Teste do prompt 1 — conversa no Claude](https://claude.ai/share/7f5f3557-4513-41ab-ab41-862261ae9e75)
-- 💬 [Teste do prompt 2 — conversa no ChatGPT](https://chatgpt.com/share/6a7fb7bd-8080-83e9-9055-73291dbfc961)
 - 📊 [Slides de apresentação (Google Drive)](https://drive.google.com/file/d/1VVfuL7sKiseBO60Ry7vc3osaiN_4ALT1/view?usp=sharing)
 
 ## Desafio
