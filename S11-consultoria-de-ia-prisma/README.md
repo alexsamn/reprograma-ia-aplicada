@@ -1,4 +1,4 @@
-## Consultoria de IA — Prisma IA para a VivaBem
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/97d4d1b6-af6e-4bfe-8c75-4f18e5b9c2d1" />
 
 Uma proposta de consultoria, montada em 90 minutos, para uma empresa fictícia de produtos para casa e bem-estar: um assistente de IA que ajuda o atendente a encontrar respostas, em vez de um robô falando direto com o cliente.
 
