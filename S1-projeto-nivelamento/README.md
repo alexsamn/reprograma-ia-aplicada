@@ -1,47 +1,56 @@
-# S1 · Projeto de Nivelamento — O Inventário de Problemas
+## O Inventário de Problemas
 
-**Aluna:** Alexsandra Moura
-**Tipo:** individual
+Um mapeamento de problemas da minha rotina para descobrir quais a IA consegue resolver, e um prompt estruturado para atacar o principal: o case de portfólio travado na fase de pesquisa.
 
-## Objetivo da atividade
+```
+FICHA DO PROJETO ──────────────────────
 
-Identificar tarefas do dia a dia que consomem tempo ou geram desgaste, filtrar quais delas a IA consegue resolver e construir um prompt estruturado para resolver uma delas.
+Semana ...... 01
+Módulo ...... Nivelamento
+Tipo ........ Individual
+Meu papel ... Inventário, filtro de viabilidade e construção do prompt
+Ferramentas . IA generativa (chat)
+Status ...... Concluído
+```
 
-## Entregáveis
-
-### 1. Inventário de problemas
-
-Problemas recorrentes da minha rotina:
+### 1. Problema
+Tarefas do dia a dia que tomam tempo ou geram desgaste nem sempre são problemas "de IA". Levantei três situações da minha rotina:
 
 | # | Problema | Contexto |
 |---|----------|----------|
 | 1 | Case de portfólio de UI/UX travado na etapa de pesquisa | Muito conteúdo, sem clareza do que priorizar nem de como usar o tempo |
-| 2 | Onde estacionar a bike com segurança em São Paulo | Google Maps não tem a informação; as dicas ficam perdidas no grupo de WhatsApp de ciclistas |
-| 3 | Encontrar oficinas de bike confiáveis por perto | Poucas avaliações no Google Maps; a recomendação circula só no boca a boca do grupo |
+| 2 | Onde estacionar a bike com segurança em São Paulo | O Google Maps não tem a informação; as dicas se perdem no grupo de WhatsApp de ciclistas |
+| 3 | Encontrar oficinas de bike confiáveis por perto | Poucas avaliações no Google Maps; a recomendação circula só no boca a boca |
 
-### 2. Filtro de viabilidade
+### 2. Objetivo
+Escolher um problema que a IA consiga resolver e construir um prompt que entregue um plano executável.
 
-Critérios: o problema precisa ser baseado em texto, organização de dados, planejamento ou rascunho, e não pode depender de intervenção física.
+> Se eu tiver um mentor de IA com um cronograma semanal e acompanhamento às sextas, então consigo terminar o case de portfólio em 4 semanas, trabalhando 3h por dia.
 
-**Problema escolhido: #1, o case de portfólio.** É um problema de planejamento e priorização, que é onde a IA funciona bem como apoio. Os problemas 2 e 3 dependem de dados de campo que a IA não tem (localização e segurança de bicicletários, reputação de oficinas).
+### 3. Processo
+1. **Inventário:** listei os problemas recorrentes da rotina.
+2. **Filtro de viabilidade:** mantive só o que é texto, organização de dados, planejamento ou rascunho, sem depender de intervenção física.
+3. **Mapeamento:** separei problema, objetivo e resultado esperado (um PDF com plano semanal até a entrega do case).
+4. **Prompt:** estruturei o pedido em 5 blocos: papel, contexto, tarefa, formato de saída, e tom e critérios.
 
-### 3. Mapeamento de objetivo e resultado esperado
+### 4. Decisões
+| Decisão | Por quê |
+|---|---|
+| Escolher o problema 1 (case de portfólio) | É planejamento e priorização, onde a IA funciona bem como apoio. Os problemas 2 e 3 dependem de dados de campo que a IA não tem |
+| Pedir acompanhamento toda sexta, com corte de escopo do MVP em caso de atraso | Um cronograma estático não se ajusta quando a semana sai do plano |
+| Pedir feedback direto, sem resposta mastigada | O objetivo é aprender a pensar como designer, não receber o case pronto |
+| Avaliar as entregas pelo olhar de quem contrata | O case existe para ser mostrado em entrevistas |
 
-- **Problema detalhado:** o case está travado na pesquisa por acúmulo de estudos e falta de clareza sobre o que priorizar no tempo disponível.
-- **Objetivo:** ter o case de portfólio pronto para mostrar em entrevistas de UI/UX, com uma estrutura de estudo e execução até o entregável final.
-- **Resultado esperado:** um PDF com plano semanal até a data de entrega do case.
-
-### 4. Prompt construído
-
+### 5. Resultado
 Prompt estruturado em 5 blocos:
 
 | Bloco | Conteúdo |
 |-------|----------|
 | **Papel** | Mentor sênior de produto digital (UI/UX) acompanhando uma designer júnior |
-| **Contexto** | Tema "Jovens e o mercado de trabalho"; pesquisa qualitativa e desk research prontos até o Mapa de Empatia; prazo de 4 semanas; 3h/dia, segunda a sexta |
+| **Contexto** | Tema "Jovens e o mercado de trabalho"; pesquisa qualitativa e desk research prontos até o Mapa de Empatia; prazo de 4 semanas; 3h/dia, de segunda a sexta |
 | **Tarefa** | Montar e manter um cronograma semana a semana até o case finalizado e apresentado |
 | **Formato de saída** | (1) PDF estilizado para impressão, com checklists por semana, blocos diários de 3h e um entregável concreto por semana; (2) acompanhamento toda sexta, com ajuste de cronograma e corte de escopo do MVP em caso de atraso |
-| **Tom e critérios** | Feedback direto, sem resposta mastigada; avaliação pelo olhar do recrutador (raciocínio crítico, definição do problema, validação rápida); case com início, meio e fim; fechamento semanal com resultado e aprendizado |
+| **Tom e critérios** | Feedback direto; avaliação pelo olhar de quem recruta (raciocínio crítico, definição do problema, validação rápida); case com início, meio e fim; fechamento semanal com resultado e aprendizado |
 
 <details>
 <summary>Ver prompt completo</summary>
@@ -51,8 +60,8 @@ Papel:
 Atue como um mentor de produto digital (UI/UX) sênior, experiente, paciente,
 estratégico e alinhado ao mercado. Seu objetivo é me mentorar como designer
 júnior, mantendo meu ritmo de execução diário (3h/dia, de segunda a sexta),
-reduzindo a ansiedade de entregar tudo de uma vez e focando em pequenas
-vitórias semanais até o case finalizado e a apresentação em 4 semanas.
+focando em pequenas vitórias semanais até o case finalizado e a apresentação
+em 4 semanas.
 
 Contexto do Projeto:
 - Tema: Jovens e o mercado de trabalho
@@ -91,8 +100,15 @@ Critérios de Avaliação:
 
 </details>
 
-## O que aprendi
+### 6. Aprendizados
+- **O que funcionou:** separar problema, objetivo e entregável antes de abrir a IA. O prompt saiu muito mais preciso.
+- **O que eu faria diferente:** registrar a resposta da IA junto com o prompt, para mostrar o resultado e não só o pedido.
+- **O que levo para os próximos projetos:** nem todo problema é "de IA". Os problemas 2 e 3 precisam de dados coletados no mundo real, não de geração de texto. E pedir acompanhamento contínuo transforma a IA de gerador de resposta única em ferramenta de gestão do projeto.
 
-- Separar **problema**, **objetivo** e **entregável** antes de abrir a IA deixa o prompt muito mais preciso.
-- Nem todo problema é "de IA": os problemas 2 e 3 precisam de dados coletados no mundo real, não de geração de texto.
-- Pedir acompanhamento contínuo com regra de corte de escopo transforma a IA de gerador de resposta única em ferramenta de gestão do projeto.
+### 7. Próximos passos
+- [ ] Anexar o cronograma gerado pela IA como resultado do prompt
+- [ ] Avaliar os problemas 2 e 3 como produto com coleta de dados colaborativa, e não só com IA
+
+---
+
+← [Voltar para todos os projetos](../README.md) · [Portfólio](https://www.alexsandramoura.com.br) · [LinkedIn](https://www.linkedin.com/in/alexsandramoura)
