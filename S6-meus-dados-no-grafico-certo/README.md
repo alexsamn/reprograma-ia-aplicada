@@ -1,4 +1,4 @@
-## Meus Dados no Gráfico Certo — Mulheres e dinheiro no Brasil
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/c54e31ef-f7eb-4aba-802b-5b98385b177c" />
 
 Quatro perguntas, quatro gráficos e um mini-pitch sobre desigualdade financeira de gênero no Brasil, mostrando que o problema não é falta de competência das mulheres, e sim falta de margem.
 
