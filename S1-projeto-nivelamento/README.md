@@ -1,5 +1,8 @@
 ## O Inventário de Problemas
 
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/4afaa31a-e2a3-4d89-832a-19ec2ee215e8" />
+
+
 Um mapeamento de problemas da minha rotina para descobrir quais a IA consegue resolver, e um prompt estruturado para atacar o principal: o case de portfólio travado na fase de pesquisa.
 
 ```
