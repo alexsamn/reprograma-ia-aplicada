@@ -1,4 +1,4 @@
-## Prompting como Ferramenta de Poder — Todos devem ter casa
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/6691d4d1-94b7-4db1-9fd8-8c77baab851b" />
 
 Um índice de vulnerabilidade habitacional criado com IA para ajudar o poder público a priorizar famílias no acesso à moradia, e uma comparação que mostra o que muda quando o prompt tem estrutura.
 
