@@ -1,4 +1,4 @@
-## Vibe Coding — Arquivos de UX
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/13233e99-ed13-4f8f-a39f-4b6a10fe2775" />
 
 Um glossário de Product Design para estudar por recuperação ativa, com interface de arquivo físico, banco de dados, área administrativa com login e deploy contínuo, construído com IA como par de programação.
 
