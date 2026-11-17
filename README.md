@@ -10,7 +10,7 @@ FICHA ────────────────────────�
 Aluna ....... Alexsandra Moura
 Curso ....... Todas em Tech Futuro+: IA Aplicada
 Instituição . Reprograma
-Projetos .... 9 entregas (6 individuais, 3 em grupo)
+Projetos .... 11 entregas (7 individuais, 4 em grupo)
 Status ...... Em andamento
 ```
 
@@ -27,6 +27,8 @@ Status ...... Em andamento
 | [S7](./S7-matriz-esforco-impacto/) | **Matriz de Esforço × Impacto** | Priorização de tarefas para IA; o agente autônomo virou automação + LLM | Individual |
 | [S8](./S8-analise-avancada-ocupacao-renda/) | **Nossa Análise Avançada** · Ocupação × Renda | Limpeza de dataset (103 duplicatas), cruzamento de duas variáveis e recomendação para duas personas | Grupo |
 | [S9](./S9-detetive-de-vies/) | **Detetive de Viés** · O bairro decide o crédito? | Auditoria de IA de crédito: teste 10 × 10, plano de risco e veredito "não lança" | Grupo |
+| [S10](./S10-modelagem-de-negocio-precificacao/) | **Modelagem de Negócio + Precificação** · LALAser | Problema medido em reais, piso de preço, hipótese de A para B, teste de 30 dias e pitch de 90 segundos | Individual |
+| [S11](./S11-consultoria-de-ia-prisma/) | **Consultoria de IA** · Prisma IA para a VivaBem | Assistente de IA para o atendente (RAG + MCP + guardrails), benchmarking de 4 caminhos e piloto de 90 dias | Grupo |
 
 ## Competências trabalhadas
 
@@ -36,6 +38,8 @@ Status ...... Em andamento
 - **Dados:** diagnóstico e limpeza, denominador, tamanho de amostra, distribuição, correlação × causalidade
 - **Visualização:** gráfico escolhido pela pergunta, título com conclusão, eixo no zero e n de cada grupo
 - **IA responsável:** auditoria de viés, LGPD, plano de risco e revisão humana
+- **Negócio:** tamanho do problema em reais, precificação, hipótese de A para B, teste com critério de seguir, ajustar ou parar
+- **Consultoria:** priorização de caso de uso, benchmarking, business case, plano de 90 dias e pitch executivo
 
 ## Ferramentas
 
