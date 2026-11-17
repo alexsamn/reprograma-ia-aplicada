@@ -1,4 +1,4 @@
-## Detetive de Viés — O bairro decide o crédito?
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/ecd8390a-e0ad-4296-be56-50056eaf116b" />
 
 Uma auditoria de viés numa IA de análise de crédito: mudamos só o bairro de uma mesma cliente e medimos se a decisão mudava. Mudou, em 10 de 10 casos.
 
