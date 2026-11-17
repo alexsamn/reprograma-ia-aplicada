@@ -1,5 +1,7 @@
 # reprograma-ia-aplicada
 
+![Todas em Tech · IA Aplicada](./capa.png)
+
 Projetos que desenvolvi no curso **Todas em Tech Futuro+: IA Aplicada** (Reprograma, 2026), uma formação prática de 16 semanas em inteligência artificial para mulheres.
 
 Cada pasta reúne a entrega de uma semana, num formato padrão: problema, objetivo, processo, decisões, resultado, aprendizados e próximos passos.
