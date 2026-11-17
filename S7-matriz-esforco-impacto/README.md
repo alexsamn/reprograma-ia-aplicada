@@ -1,4 +1,4 @@
-## Matriz de Esforço × Impacto — Priorizando onde usar IA
+<img width="1280" height="640" alt="capa" src="https://github.com/user-attachments/assets/634a0071-289a-4638-bc8c-abe26c2ae0e3" />
 
 Uma matriz para decidir qual tarefa da rotina vale uma solução com IA, e a validação da tecnologia antes de construir, que trocou um agente autônomo por uma automação simples e mais segura.
 
